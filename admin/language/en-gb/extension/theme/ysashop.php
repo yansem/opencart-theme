@@ -1,11 +1,11 @@
 <?php
 // Heading
-$_['heading_title']                    = 'antropy Store Theme';
+$_['heading_title']                    = 'Ysashop Store Theme';
 
 // Text
 $_['text_extension']                   = 'Extensions';
-$_['text_success']                     = 'Success: You have modified the antropy store theme!';
-$_['text_edit']                        = 'Edit antropy Store Theme';
+$_['text_success']                     = 'Success: You have modified the ysashop store theme!';
+$_['text_edit']                        = 'Edit ysashop Store Theme';
 $_['text_general']                     = 'General';
 $_['text_product']                     = 'Products';
 $_['text_image']                       = 'Images';
@@ -34,7 +34,7 @@ $_['help_product_limit']               = 'Determines how many catalog items are 
 $_['help_product_description_length']  = 'In the list view, short description character limit (categories, special etc)';
 
 // Error
-$_['error_permission']                 = 'Warning: You do not have permission to modify the antropy store theme!';
+$_['error_permission']                 = 'Warning: You do not have permission to modify the ysashop store theme!';
 $_['error_limit']                      = 'Product Limit required!';
 $_['error_image_thumb']                = 'Product Image Thumb Size dimensions required!';
 $_['error_image_popup']                = 'Product Image Popup Size dimensions required!';
