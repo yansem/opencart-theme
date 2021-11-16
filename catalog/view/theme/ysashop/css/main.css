@@ -311,11 +311,12 @@ section {
 }
 /*Services*/
 
-/*Footer*/
+/* Footer */
 
 .footer {
     background-color: #343434;
 }
+
 .footer h4 {
     color: #ccc;
     text-transform: uppercase;
@@ -323,22 +324,27 @@ section {
     border-bottom: 1px solid #555;
     padding-bottom: 3px;
 }
-.footer li a {
+
+.footer a, .footer li {
     color: #c8c8c8;
 }
-.footer li a:hover {
+
+.footer a:hover {
     color: #fff;
     text-decoration: underline;
 }
+
 .footer ul li a {
     display: block;
 }
+
 .footer-icons a {
     display: inline-block;
     margin-right: 15px;
     font-size: 20px;
 }
-/*Footer*/
+
+/* Footer */
 
 #top {
     position: fixed;
