@@ -116,7 +116,7 @@ section {
 .header-top a {
     color: #fff;
 }
-.header-top a:hover {
+.header-top a:hover:not(.btn) {
     color: #000;
 }
 #search {
@@ -137,7 +137,7 @@ section {
 #search .form-control {
     border-radius: 0;
 }
-.header-top .icons a {
+.header-top .icons a:not(.btn) {
     padding: 10px;
 }
 .header-top .icon-phone, .header-top .icons i {
