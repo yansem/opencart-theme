@@ -56,7 +56,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <a href="tel:5551234567"><span class="icon-phone">&#9743;</span>555-123-4567</a>
+                    <a href="tel:{{ telephone }}"><span class="icon-phone">&#9743;</span>{{ telephone }}</a>
                 </div>
                 <div class="col icons text-end">
                     <form id="search">
@@ -139,38 +139,13 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid p-0">
-                    <a class="navbar-brand" href="index.html">Shop Brand</a>
+                    <a class="navbar-brand" href="{{ home }}">{{ name }}</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0  ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="category.html">Компьютеры</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="category.html">Планшеты</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown"
-                                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Ноутбуки
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="category.html">Mac</a></li>
-                                    <li><a class="dropdown-item" href="category.html">Windows</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="category.html">Телефоны</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="category.html">Камеры</a>
-                            </li>
-                        </ul>
-                    </div>
+                    {{ menu }}
                 </div>
             </nav>
         </div>
