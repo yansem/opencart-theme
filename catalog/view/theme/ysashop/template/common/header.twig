@@ -68,62 +68,10 @@
                         </div>
                     </form>
                     <a href="#" id="open-search"><i class="fas fa-search"></i></a>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#cart-modal" class="open-cart-modal">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="badge bg-danger rounded-circle count-items">0</span>
-                    </a>
+                    {{ cart }}
+
                     <a href="#"><i class="far fa-heart"></i></a>
-                    <div class="modal fade" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <table class="table text-start">
-                                        <thead>
-                                        <tr>
-                                            <th scope="col">Фото</th>
-                                            <th scope="col">Товар</th>
-                                            <th scope="col">Кол-во</th>
-                                            <th scope="col">Цена</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td><img src="catalog/view/theme/ysashop/image/products/apple_cinema_30.jpg" alt=""></td>
-                                            <td><a href="product.html">Apple Cinema 30</a></td>
-                                            <td>1</td>
-                                            <td>1000</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="catalog/view/theme/ysashop/image/products/canon_eos_5d_1.jpg"
-                                                     alt=""></td>
-                                            <td><a href="product.html">Canon EOS 5d</a></td>
-                                            <td>1</td>
-                                            <td>1000</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="catalog/view/theme/ysashop/image/products/iphone_1.jpg" alt=""></td>
-                                            <td><a href="product.html">IPhone 1</a></td>
-                                            <td>1</td>
-                                            <td>1000</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Продолжить
-                                        покупки
-                                    </button>
-                                    <button type="button" class="btn btn-primary">Оформить заказ</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="dropdown d-inline-block">
                         <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user"></i></a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
