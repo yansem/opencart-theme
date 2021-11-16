@@ -58,6 +58,9 @@ h1 {
         opacity: 0;
     }
 }
+.dropdown-menu {
+    right: 0;
+}
 li a.dropdown-item {
     color: #000;
 }
