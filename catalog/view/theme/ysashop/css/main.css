@@ -152,6 +152,15 @@ section {
     top: 0;
     font-size: 10px;
 }
+.header-top .link-wishlist {
+    position: relative;
+}
+.header-top .count-wishlist {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 10px;
+}
 .modal-body img {
     max-width: 100px;
 }
