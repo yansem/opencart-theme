@@ -70,7 +70,10 @@
                     <a href="#" id="open-search"><i class="fas fa-search"></i></a>
                     {{ cart }}
 
-                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="{{ wishlist }}" class="link-wishlist">
+                        <i class="far fa-heart"></i>
+                        <span class="badge bg-danger rounded-circle count-wishlist">{{ text_wishlist }}</span>
+                    </a>
 
                     <div class="dropdown d-inline-block">
                         <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user"></i></a>
