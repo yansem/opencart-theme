@@ -287,11 +287,14 @@ var wishlist = {
 				}
 
 				if (json['success']) {
-					$('#content').parent().before('<div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+					$('header').after('<div class="container"><div class="alert alert-success' +
+						' alert-dismissible fade show">' +
+						'<i class="fa fa-check-circle"></i> ' + json['success'] +
+						' <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div></div>');
 				}
 
-				$('#wishlist-total span').html(json['total']);
-				$('#wishlist-total').attr('title', json['total']);
+				$('.count-wishlist').html(json['total']);
+				// $('#wishlist-total').attr('title', json['total']);
 
 				$('html, body').animate({ scrollTop: 0 }, 'slow');
 			},
