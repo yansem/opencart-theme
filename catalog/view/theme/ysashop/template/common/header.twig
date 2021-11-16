@@ -78,8 +78,16 @@
                     <div class="dropdown d-inline-block">
                         <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user"></i></a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Авторизация</a></li>
-                            <li><a class="dropdown-item" href="#">Регистрация</a></li>
+                            {% if logged %}
+                                <li><a class="dropdown-item" href="{{ account }}">{{ text_account }}</a></li>
+                                <li><a class="dropdown-item" href="{{ order }}">{{ text_order }}</a></li>
+                                <li><a class="dropdown-item" href="{{ transaction }}">{{ text_transaction }}</a></li>
+                                <li><a class="dropdown-item" href="{{ download }}">{{ text_download }}</a></li>
+                                <li><a class="dropdown-item" href="{{ logout }}">{{ text_logout }}</a></li>
+                            {% else %}
+                                <li><a class="dropdown-item" href="{{ register }}">{{ text_register }}</a></li>
+                                <li><a class="dropdown-item" href="{{ login }}">{{ text_login }}</a></li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>
