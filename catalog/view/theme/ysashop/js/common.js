@@ -158,6 +158,8 @@ var cart = {
 
 				if (json['success']) {
 					$('.count-items').html(json['total']);
+					$('#cart-modal .modal-body').load('index.php?route=common/cart/info .in-cart');
+					new bootstrap.Modal(document.getElementById('cart-modal')).show();
 					/*$('#content').parent().before('<div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 
 					// Need to set timeout otherwise it wont update the total
@@ -167,8 +169,7 @@ var cart = {
 
 					$('html, body').animate({ scrollTop: 0 }, 'slow');*/
 
-					$('#cart-modal .modal-body').load('index.php?route=common/cart/info .in-cart');
-					new bootstrap.Modal(document.getElementById('cart-modal')).show();
+
 				}
 			},
 			error: function(xhr, ajaxOptions, thrownError) {
